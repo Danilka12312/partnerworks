@@ -1,15 +1,15 @@
 class CreateWorks < ActiveRecord::Migration[7.0]
   def change
     create_table :works do |t|
-      t.string :name
-      t.string :img
-      t.string :link
-      t.string :contact
-      t.string :qr
-      t.string :description
-      t.string :mini_desc
-      t.string :salary
-      t.string :city
+      t.text :name
+      t.text :img
+      t.text :link
+      t.text :contact
+      t.text :qr
+      t.text :description
+      t.text :mini_desc
+      t.text :salary
+      t.text :city
 
       t.timestamps
     end
